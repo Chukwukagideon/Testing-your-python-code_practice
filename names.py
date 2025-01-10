@@ -10,5 +10,9 @@ while True:
     if last == "q":
         break
 
-    formatted_name = get_formatted_name(first, last)
+    middle = input("Please give me your middle name: ")
+    if last == "q":
+        break
+
+    formatted_name = get_formatted_name(first, last, middle)
     print(f"\tNeatly formatted name: {formatted_name}")
